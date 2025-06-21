@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Votar - Maker Plus</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1>Votação da Feira Maker</h1>
@@ -17,20 +19,21 @@
             <p>Excelente! Agora é a vez da categoria <strong>Maker Plus</strong>.</p>
             <p>Insira o número do projeto e confirme.</p>
 
-            <form id="voteFormPlus">
+            <form id="voteFormvotacao2">
                 <div class="form-group">
-                    <label for="projectIdPlus">Número do Projeto:</label>
-                    <input type="number" id="projectIdPlus" name="projectIdPlus" min="1" required placeholder="Ex: 201">
+                    <label for="projectIdvotacao2">Número do Projeto:</label>
+                    <input type="number" id="projectIdvotacao2" name="projectIdvotacao2" min="1" required
+                        placeholder="Ex: 201">
                 </div>
-                <button type="button" id="confirmPlus">Confirmar Número</button>
-                <div id="confirmationStepPlus" class="hidden">
-                    <p>Você digitou o projeto número: <strong id="confirmedProjectPlus"></strong>.</p>
+                <button type="button" id="confirmvotacao2">Confirmar Número</button>
+                <div id="confirmationStepvotacao2" class="hidden">
+                    <p>Você digitou o projeto número: <strong id="confirmedProjectvotacao2"></strong>.</p>
                     <p>Deseja confirmar seu voto neste projeto?</p>
                     <button type="submit">Sim, Confirmar Voto</button>
-                    <button type="button" id="editPlus">Editar Número</button>
+                    <button type="button" id="editvotacao2">Editar Número</button>
                 </div>
             </form>
-            <p id="voteMessagePlus" class="hidden"></p>
+            <p id="voteMessagevotacao2" class="hidden"></p>
         </section>
     </main>
 
@@ -40,4 +43,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

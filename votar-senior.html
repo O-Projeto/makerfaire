@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Votar - Maker Senior</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1>Votação da Feira Maker</h1>
@@ -17,20 +19,21 @@
             <p>Quase lá! Agora vote na categoria <strong>Maker Senior</strong>.</p>
             <p>Insira o número do projeto e confirme.</p>
 
-            <form id="voteFormSenior">
+            <form id="voteFormvotacao3">
                 <div class="form-group">
-                    <label for="projectIdSenior">Número do Projeto:</label>
-                    <input type="number" id="projectIdSenior" name="projectIdSenior" min="1" required placeholder="Ex: 301">
+                    <label for="projectIdvotacao3">Número do Projeto:</label>
+                    <input type="number" id="projectIdvotacao3" name="projectIdvotacao3" min="1" required
+                        placeholder="Ex: 301">
                 </div>
-                <button type="button" id="confirmSenior">Confirmar Número</button>
-                <div id="confirmationStepSenior" class="hidden">
-                    <p>Você digitou o projeto número: <strong id="confirmedProjectSenior"></strong>.</p>
+                <button type="button" id="confirmvotacao3">Confirmar Número</button>
+                <div id="confirmationStepvotacao3" class="hidden">
+                    <p>Você digitou o projeto número: <strong id="confirmedProjectvotacao3"></strong>.</p>
                     <p>Deseja confirmar seu voto neste projeto?</p>
                     <button type="submit">Sim, Confirmar Voto</button>
-                    <button type="button" id="editSenior">Editar Número</button>
+                    <button type="button" id="editvotacao3">Editar Número</button>
                 </div>
             </form>
-            <p id="voteMessageSenior" class="hidden"></p>
+            <p id="voteMessagevotacao3" class="hidden"></p>
         </section>
     </main>
 
@@ -40,4 +43,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

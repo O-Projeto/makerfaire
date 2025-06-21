@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Votar - Maker Junior</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1>Votação da Feira Maker</h1>
@@ -17,20 +19,21 @@
             <p>Olá, eleitor! Vote no seu projeto favorito da categoria <strong>Maker Junior</strong>.</p>
             <p>Primeiro, insira o número do projeto. Depois, confirme para prosseguir.</p>
 
-            <form id="voteFormJunior">
+            <form id="voteFormvotacao1">
                 <div class="form-group">
-                    <label for="projectIdJunior">Número do Projeto:</label>
-                    <input type="number" id="projectIdJunior" name="projectIdJunior" min="1" required placeholder="Ex: 101">
+                    <label for="projectIdvotacao1">Número do Projeto:</label>
+                    <input type="number" id="projectIdvotacao1" name="projectIdvotacao1" min="1" required
+                        placeholder="Ex: 101">
                 </div>
-                <button type="button" id="confirmJunior">Confirmar Número</button>
-                <div id="confirmationStepJunior" class="hidden">
-                    <p>Você digitou o projeto número: <strong id="confirmedProjectJunior"></strong>.</p>
+                <button type="button" id="confirmvotacao1">Confirmar Número</button>
+                <div id="confirmationStepvotacao1" class="hidden">
+                    <p>Você digitou o projeto número: <strong id="confirmedProjectvotacao1"></strong>.</p>
                     <p>Deseja confirmar seu voto neste projeto?</p>
                     <button type="submit">Sim, Confirmar Voto</button>
-                    <button type="button" id="editJunior">Editar Número</button>
+                    <button type="button" id="editvotacao1">Editar Número</button>
                 </div>
             </form>
-            <p id="voteMessageJunior" class="hidden"></p>
+            <p id="voteMessagevotacao1" class="hidden"></p>
         </section>
     </main>
 
@@ -40,4 +43,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
