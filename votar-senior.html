@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votar - Maker Senior</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Votação da Feira Maker</h1>
+    </header>
+
+    <main>
+        <section class="voting-section">
+            <h2>Votação - Categoria Maker Senior</h2>
+            <p>Quase lá! Agora vote na categoria <strong>Maker Senior</strong>.</p>
+            <p>Insira o número do projeto e confirme.</p>
+
+            <form id="voteFormSenior">
+                <div class="form-group">
+                    <label for="projectIdSenior">Número do Projeto:</label>
+                    <input type="number" id="projectIdSenior" name="projectIdSenior" min="1" required placeholder="Ex: 301">
+                </div>
+                <button type="button" id="confirmSenior">Confirmar Número</button>
+                <div id="confirmationStepSenior" class="hidden">
+                    <p>Você digitou o projeto número: <strong id="confirmedProjectSenior"></strong>.</p>
+                    <p>Deseja confirmar seu voto neste projeto?</p>
+                    <button type="submit">Sim, Confirmar Voto</button>
+                    <button type="button" id="editSenior">Editar Número</button>
+                </div>
+            </form>
+            <p id="voteMessageSenior" class="hidden"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Feira Maker. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

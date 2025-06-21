@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votação Feira Maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo(a) à Votação da Feira Maker!</h1>
+    </header>
+
+    <main>
+        <section class="presentation">
+            <h2>Sobre a Feira Maker</h2>
+            <p>Seja bem-vindo(a) à nossa incrível Feira Maker! Este evento é uma celebração da criatividade, inovação e do espírito "faça você mesmo". Aqui, você encontrará projetos fascinantes desenvolvidos por mentes brilhantes, desde robótica e eletrônica até arte digital e prototipagem. Sua participação é fundamental para reconhecermos os projetos mais impactantes e inovadores da feira.</p>
+            <p>Explore, admire e, o mais importante, <strong>vote nos seus projetos favoritos!</strong> Sua voz ajuda a moldar o futuro da inovação e a incentivar nossos makers.</p>
+        </section>
+
+        <section class="voter-identification">
+            <h2>Identificação do Eleitor</h2>
+            <form id="voterForm">
+                <div class="form-group">
+                    <label for="voterId">Seu ID de Eleitor:</label>
+                    <input type="text" id="voterId" name="voterId" required placeholder="Ex: ABC123DEF">
+                </div>
+                <button type="submit">Prosseguir para a Votação</button>
+            </form>
+            <p id="message" class="hidden"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Feira Maker. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
