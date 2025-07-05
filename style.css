@@ -8,129 +8,128 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #175df7;
     color: white;
     padding: 1rem 0;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-size: 1.2rem;
 }
 
+.presentation h2 {
+    font-size: 2em;
+}
+
+.presentation {
+    position: relative;
+    background-image: url('images/9ffe904e-47e0-4bd7-bbe6-42ae4ba354fa.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    min-height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+    font-size: larger;
+}
+
+.presentation::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75); 
+    backdrop-filter: blur(5px); 
+    -webkit-backdrop-filter: blur(5px); 
+    z-index: 1; 
+}
+
+.presentation .overlay {
+    position: relative; 
+    color: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    text-align: center;
+    z-index: 2; 
+    max-width: 900px;
+    width: 90%;
+    
+}
+
+.presentation .overlay .text-box {
+    max-width: 900px; 
+    width: 100%; 
+    background-color: rgba(0, 0, 0, 0.0); 
+  
+    box-sizing: border-box;
+}
 main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-
-.presentation, .voter-identification, .voting-section, .thank-you-section {
+.voter-identification {
+    text-align: center; 
     margin-bottom: 30px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    text-align: center;
+    width: 100%; 
 }
 
-.presentation h2, .voter-identification h2, .voting-section h2, .thank-you-section h2 {
-    color: #2c3e50;
-    border-bottom: 2px solid #4CAF50;
-    padding-bottom: 10px;
+.voter-identification h2 {
+    font-size: 1.8em;
     margin-bottom: 20px;
+    color: #2c3e50;
 }
 
-.form-group {
-    margin-bottom: 15px;
+.voter-identification form {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    max-width: 450px;
+    margin: 0 auto; 
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.form-group input[type="text"],
-.form-group input[type="email"],
-.form-group input[type="number"] {
-    width: calc(100% - 20px);
+.voter-identification input[type="text"] {
     padding: 10px;
+    width: 100%; 
+    font-size: 1.7em;
+    height: 65px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
+    border-radius: 5px;
+    margin-bottom: 15px; 
+    box-sizing: border-box; 
 }
 
-button[type="submit"], button[type="button"] {
-    background-color: #4CAF50;
+.voter-identification button {
+    background-color: #28a745;
     color: white;
-    padding: 12px 20px;
+    padding: 12px 25px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
+    height: 65px;
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: 1.7rem;
     transition: background-color 0.3s ease;
-    margin-right: 10px;
+    width: auto; 
 }
 
-button[type="submit"]:hover, button[type="button"]:hover {
-    background-color: #45a049;
+.voter-identification button:hover {
+    background-color: #218838;
 }
 
-button[type="button"]#editJunior,
-button[type="button"]#editPlus,
-button[type="button"]#editSenior,
-button[type="button"]#editMaster {
-    background-color: #6c757d;
+@media (max-width: 480px) {
+    .voter-identification form {
+        max-width: 90%; 
+    }
 }
 
-button[type="button"]#editJunior:hover,
-button[type="button"]#editPlus:hover,
-button[type="button"]#editSenior:hover,
-button[type="button"]#editMaster:hover {
-    background-color: #5a6268;
-}
-
-.thank-you-section p {
-    margin-bottom: 10px;
-    font-size: 1.1em;
-}
-
-.thank-you-section a {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.thank-you-section a:hover {
-    text-decoration: underline;
-}
-
-.redirect-message { /* Novo estilo para a mensagem de redirecionamento */
-    font-size: 1.0em;
-    font-style: italic;
-    color: #555;
-    margin-top: 30px;
-}
-
-#countdown { /* Estilo para o contador */
-    font-weight: bold;
-    color: #4CAF50;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-    background-color: #333;
-    color: white;
-    font-size: 0.9rem;
-}
-
-.hidden {
-    display: none;
-}
-
-#message, #voteMessageJunior, #voteMessagePlus, #voteMessageSenior, #voteMessageMaster {
+#message {
     margin-top: 15px;
     padding: 10px;
     border-radius: 4px;
@@ -139,8 +138,18 @@ footer {
     border: 1px solid #28a745;
 }
 
-.eleitor-list ul {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
+footer.footer-logos {
+    background-color: #222;
+    text-align: center;
+    padding: 5vh 2vw;
+}
+
+footer.footer-logos img {
+    height: 6vh;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+.hidden {
+    display: none;
 }
