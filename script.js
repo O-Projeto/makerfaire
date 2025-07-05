@@ -352,23 +352,6 @@ Object.entries(votosAgrupados).forEach(([projetoId, eleitores]) => {
     setupVotingCategory('votacao3', '/votar/master');
     setupVotingCategory('votacao4', '/agradecimento');
 
-    // --- Lógica para a página de agradecimento ---
-    const countdownElement = document.getElementById('countdown');
-    if (countdownElement) {
-        let timeLeft = 5;
-        countdownElement.textContent = timeLeft;
-
-        const timerInterval = setInterval(() => {
-            timeLeft--;
-            countdownElement.textContent = timeLeft;
-
-            if (timeLeft <= 0) {
-                clearInterval(timerInterval);
-                window.location.href = '/index';
-            }
-        }, 1000);
-    }
-    
     // --- Carregar resultados da votação ---
     loadVotingResults();
 });

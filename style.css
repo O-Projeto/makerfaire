@@ -2,9 +2,14 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #fff;
     color: #333;
     line-height: 1.6;
+    margin-bottom: 80px;
+
+}
+main {
+    padding-bottom: 100px;
 }
 
 header {
@@ -139,9 +144,16 @@ main {
 }
 
 footer.footer-logos {
-    background-color: #222;
+   position: fixed; /* Fixa no rodapé da tela */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222; /* Cor de fundo (igual ao seu código atual) */
+    color: white;
     text-align: center;
-    padding: 5vh 2vw;
+    padding: 15px 0; /* Ajuste o padding conforme necessário */
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional */
 }
 
 footer.footer-logos img {
@@ -256,4 +268,20 @@ button:hover {
     padding: 15px;
     background-color: #f9f9f9;
     border-radius: 5px;
+}
+/* Estilo do Botão "Voltar ao Início" */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #45a049; /* Cor azul para combinar com o header */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #45a049; /* Cor mais escura no hover */
 }
