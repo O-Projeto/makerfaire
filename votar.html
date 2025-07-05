@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votar nos Projetos Maker Junior</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <h1>Votação da Feira Maker</h1>
+    </header>
+
+    <main>
+        <section class="voting-section">
+            <h2>Votação - Categoria Maker Junior</h2>
+            <p>Olá, eleitor! Agora você pode votar no seu projeto favorito da categoria <strong>Maker Junior</strong>.</p>
+            <p>Por favor, insira o número do projeto que você deseja votar. Certifique-se de que o número está correto!</p>
+
+            <form id="voteForm">
+                <div class="form-group">
+                    <label for="projectId">Número do Projeto:</label>
+                    <input type="number" id="projectId" name="projectId" min="1" required placeholder="Ex: 101">
+                </div>
+                <button type="submit">Votar</button>
+            </form>
+            <p id="voteMessage" class="hidden"></p>
+        </section>
+    </main>
+
+  <footer class="footer-logos">
+    <img src="images/Ativo 1.png" alt="img1" />
+    <img src="images/Ativo 2.png" alt="img2" />
+    <img src="images/Ativo 3.png" alt="img3" />
+    <img src="images/Ativo 4.png" alt="img4" />
+    <img src="images/Ativo 5.png" alt="img5" />
+    <img src="images/Ativo 6.png" alt="img6" />
+    <img src="images/Ativo 8.png" alt="img8" />
+  </footer>
+    <script src="/script.js"></script>
+</body>
+</html> 
