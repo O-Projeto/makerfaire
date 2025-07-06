@@ -1,35 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Votar - Maker Starter</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header>
-        <h1>Votação da Feira Maker</h1>
+        <h2>Votação da Feira Maker</h2>
     </header>
 
     <main>
-        <section class="voting-section">
+        <section class="voter-identification">
             <h2>⚙️Votação - Categoria Maker Starter⚙️</h2>
-            <div>
-                <p>Crianças e jovens com projetos educacionais e materiais acessíveis.</p>
-            </div>
-
+            <p>Crianças e jovens com projetos educacionais e materiais acessíveis.</p>
             <p>Olá, eleitor! Vote no seu projeto favorito da categoria <strong>Maker Starter</strong>.</p>
             <p>Primeiro, insira o número do projeto. Depois, confirme para prosseguir.</p>
 
             <form id="voterForm">
                 <div class="form-group">
-            
                     <input type="number" id="projectIdvotacao1" name="projectIdvotacao1" min="1" required
                         placeholder="Número do projeto">
                 </div>
                 <button type="button" id="confirmvotacao1">Confirmar Número</button>
+
+
                 <div id="confirmationStepvotacao1" class="hidden">
                     <p>Você digitou o projeto número: <strong id="confirmedProjectvotacao1"></strong>.</p>
                     <p>Deseja confirmar seu voto neste projeto?</p>
@@ -41,15 +37,15 @@
         </section>
     </main>
 
-  <footer class="footer-logos">
-    <img src="images/Ativo 1.png" alt="img1" />
-    <img src="images/Ativo 2.png" alt="img2" />
-    <img src="images/Ativo 3.png" alt="img3" />
-    <img src="images/Ativo 4.png" alt="img4" />
-    <img src="images/Ativo 5.png" alt="img5" />
-    <img src="images/Ativo 6.png" alt="img6" />
-    <img src="images/Ativo 8.png" alt="img8" />
-  </footer>
+    <footer class="footer-logos">
+        <img src="images/Ativo 1.png" alt="img1" />
+        <img src="images/Ativo 2.png" alt="img2" />
+        <img src="images/Ativo 3.png" alt="img3" />
+        <img src="images/Ativo 4.png" alt="img4" />
+        <img src="images/Ativo 5.png" alt="img5" />
+        <img src="images/Ativo 6.png" alt="img6" />
+        <img src="images/Ativo 8.png" alt="img8" />
+      </footer>
     <script src="script.js"></script>
 </body>
 

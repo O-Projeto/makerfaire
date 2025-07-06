@@ -1,21 +1,31 @@
-body {
-    font-family: 'Inter', sans-serif;
+html, body {
+    height: 100%; 
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
     background-color: #fff;
     color: #333;
+    display: flex;
+    flex-direction: column;
     line-height: 1.6;
 }
 
 @font-face {
     font-family: 'Inter';
     src: url('fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
-    font-weight: 100 900; /* intervalo das variações possíveis */
+    font-weight: 100 900; 
     font-style: normal;
   }
-  
+
 main {
-    padding-bottom: 100px;
+    flex: 1; 
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 30px;
+    background-color: #fff;
 }
 
 header {
@@ -78,23 +88,23 @@ header {
     box-sizing: border-box;
 }
 main {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 30px 30px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex: 1; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 30px 30px; 
+    box-sizing: border-box; 
+    min-height: calc(100vh - 120px - 100px);
 }
 .voter-identification {
     text-align: center; 
     margin-top: 30px;
     margin-bottom: 30px;
     width: 100%; 
+    font-size: 1.2rem;
 }
 
 .voter-identification h2 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
     color: #2c3e50;
 }
 
@@ -104,18 +114,30 @@ main {
     align-items: center; 
     max-width: 500px;
     margin: 0 auto; 
-    gap: 25px;
+    margin-top: 30px;
+    gap: 30px;
 }
 
 .voter-identification input[type="text"] {
     padding: 10px;
     width: 100%; 
-    font-size: 1.7em;
     height: 70px;
+    font-size: 1.4em;
     border: 1px solid #ccc;
     border-radius: 20px;
     box-sizing: border-box; 
 }
+
+.voter-identification input[type="number"] {
+    padding: 10px;
+    width: 100%; 
+    font-size: 1.4em;
+    height: 70px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box; 
+} 
+
 
 .voter-identification button {
     background-color: #28a745;
@@ -125,7 +147,7 @@ main {
     border-radius: 20px;
     height: 70px;
     cursor: pointer;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     transition: background-color 0.3s ease;
     width: auto; 
 }
@@ -149,7 +171,6 @@ main {
     border: 1px solid #28a745;
 }
 
-/* Footer normal (sem position: fixed) */
 footer.footer-logos {
   background-color: #222;
   color: white;
@@ -192,12 +213,14 @@ footer.footer-logos img {
 }
 
 .voting-section h2 {
+  font-size: 2em;
   margin-bottom: 20px;
 }
 
 .voting-section p {
   margin-bottom: 15px;
-  line-height: 1.6;
+  line-height: 1.0;
+  font-size: larger;
 }
 
 .voting-section .form-group {
@@ -221,7 +244,6 @@ footer.footer-logos img {
   margin: 5px;
 }
 
-/* Estilo geral do formulário */
 .voting-section {
     max-width: 600px;
     margin: 0 auto;
@@ -229,38 +251,6 @@ footer.footer-logos img {
     font-family: Arial, sans-serif;
 }
 
-/* Caixa de texto (input) */
-input[type="number"] {
-    width: 100%;
-    max-width: 800px; /* Largura máxima */ 
-    height: 80px; 
-    font-size: 32px;
-    padding: 10px;
-    margin: 10px 0;
-    border: 3px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-} 
-
-/* Botões */
-button {
-    background-color: #28a745;
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 5px;
-    height: 65px;
-    cursor: pointer;
-    font-size: 1.7rem;
-    transition: background-color 0.3s ease;
-    width: auto; 
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-/* Mensagens e confirmação */
 .hidden {
     display: none;
 }
@@ -271,12 +261,12 @@ button:hover {
     background-color: #f9f9f9;
     border-radius: 5px;
 }
-/* Estilo do Botão "Voltar ao Início" */
+
 .back-button {
     display: inline-block;
     margin-top: 20px;
     padding: 12px 25px;
-    background-color: #45a049; /* Cor azul para combinar com o header */
+    background-color: #45a049; 
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -285,6 +275,6 @@ button:hover {
 }
 
 .back-button:hover {
-    background-color: #45a049; /* Cor mais escura no hover */
+    background-color: #45a049; 
 }
 
