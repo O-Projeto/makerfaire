@@ -119,7 +119,7 @@ export function setupVotingCategory(categoryHTMLId, nextCategoryPage = null) {
     sessionStorage.setItem("feiramakerVotos", JSON.stringify(allVotos));
     displayVoteMessage(
       voteMessage,
-      `Voto na categoria ${backendCategoryName} registrado localmente. Redirecionando...`,
+      `Voto na categoria registrado com sucesso. Redirecionando...`,
     );
 
     const isLastCategory = nextCategoryPage === "/agradecimento";
