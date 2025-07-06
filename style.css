@@ -223,3 +223,24 @@ footer.footer-logos img {
   background-color: #f9f9f9;
   border-radius: 5px;
 }
+
+.sidebar button.category-btn {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    background-color: #175df7;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .sidebar button.category-btn:hover {
+    background-color: #0f46c1;
+  }
+
+  .sidebar button.category-btn.active {
+    background-color: #0a2e7a;
+  }

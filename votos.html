@@ -4,30 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resultados - Feira Maker 2025</title>
-    <link rel="stylesheet" href="style.css" />
-
-    <style>
-      .sidebar button.category-btn {
-        width: 100%;
-        padding: 1rem;
-        margin-bottom: 10px;
-        font-size: 1.1rem;
-        background-color: #175df7;
-        color: white;
-        border: none;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-      }
-
-      .sidebar button.category-btn:hover {
-        background-color: #0f46c1;
-      }
-
-      .sidebar button.category-btn.active {
-        background-color: #0a2e7a;
-      }
-    </style>
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
     <header>
@@ -35,7 +12,6 @@
     </header>
 
     <main class="results-page" style="display: flex; min-height: 80vh">
-      <!-- Menu lateral com categorias -->
       <nav
         class="sidebar"
         style="
@@ -63,8 +39,6 @@
           </li>
         </ul>
       </nav>
-
-      <!-- Área dinâmica de conteúdo -->
       <section class="content-area" style="flex: 1; padding: 1rem">
         <div id="categoryTitle">
           <h2>🏆 Resultados da 1ª Categoria</h2>
@@ -80,12 +54,8 @@
             margin-top: 1rem;
           "
         >
-          <!-- Conteúdo gerado dinamicamente -->
         </div>
-
-        <!-- Estatísticas de votos (será preenchido via JS) -->
         <div id="voteStats" class="vote-stats" style="margin-top: 2rem">
-          <!-- Conteúdo gerado dinamicamente -->
         </div>
       </section>
     </main>
@@ -99,6 +69,6 @@
       <img src="images/Ativo 6.png" alt="img6" />
       <img src="images/Ativo 8.png" alt="img8" />
     </footer>
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>
