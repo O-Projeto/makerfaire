@@ -1,57 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Votar - Maker Builder</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Votação da Feira Maker</h1>
+      <h2>Votação da Feira Maker</h2>
     </header>
 
     <main>
-        <section class="voting-section">
-            <h2>⚙️Votação - Categoria Maker Builder⚙️</h2>
+      <section class="voter-identification">
+        <h2>⚙️Votação - Categoria Maker Builder⚙️</h2>
+        <p>
+          Projetos mais elaborados, com maior complexidade e investimento médio
+          em ferramentas e materiais.
+        </p>
 
-            <div>
-                <p>Projetos mais elaborados, com maior complexidade e investimento médio em ferramentas e materiais.</p>
-            </div>
-
-            <p>Para finalizar, vote na categoria <strong>Maker Builder</strong>.</p>
-            <p>Insira o número do projeto e confirme.</p>
-            <form id="voterForm">
-                <div class="form-group">
-                    <input type="number" id="projectIdvotacao4" name="projectIdvotacao4" min="1" required
-                        placeholder="Numero do projeto">
-                </div>
-                <div></div>
-                <button type="button" id="confirmvotacao4">Confirmar Número</button>
-                <div id="confirmationStepvotacao4" class="hidden">
-                    <p>Projetos mais elaborados, com maior complexidade e investimento médio em ferramentas e materiais.</p>
-                    <p>Você digitou o projeto número: <strong id="confirmedProjectvotacao4"></strong>.</p>
-                    <p>Deseja confirmar seu voto neste projeto?</p>
-                    <button type="submit">Sim, Confirmar Voto</button>
-                    <button type="button" id="editvotacao4">Editar Número</button>
-                </div>
-            </form>
-            <p id="voteMessagevotacao4" class="hidden"></p>
-        </section>
+        <p>Para finalizar, vote na categoria <strong>Maker Builder</strong>.</p>
+        <p>Insira o número do projeto e confirme.</p>
+        <form id="voterForm">
+          <div class="form-group">
+            <input
+              type="number"
+              id="projectIdvotacao4"
+              name="projectIdvotacao4"
+              min="1"
+              required
+              placeholder="Número do projeto"
+            />
+          </div>
+          <div></div>
+          <button type="button" id="confirmvotacao4">Confirmar Número</button>
+          <div id="confirmationStepvotacao4" class="hidden">
+            <p>
+              Projetos mais elaborados, com maior complexidade e investimento
+              médio em ferramentas e materiais.
+            </p>
+            <p>
+              Você digitou o projeto número:
+              <strong id="confirmedProjectvotacao4"></strong>.
+            </p>
+            <p>Deseja confirmar seu voto neste projeto?</p>
+            <button type="submit">Sim, Confirmar Voto</button>
+            <button type="button" id="editvotacao4">Editar Número</button>
+          </div>
+        </form>
+        <p id="voteMessagevotacao4" class="hidden"></p>
+      </section>
     </main>
 
-  <footer class="footer-logos">
-    <img src="images/Ativo 1.png" alt="img1" />
-    <img src="images/Ativo 2.png" alt="img2" />
-    <img src="images/Ativo 3.png" alt="img3" />
-    <img src="images/Ativo 4.png" alt="img4" />
-    <img src="images/Ativo 5.png" alt="img5" />
-    <img src="images/Ativo 6.png" alt="img6" />
-    <img src="images/Ativo 8.png" alt="img8" />
-  </footer>
+    <footer class="footer-logos">
+      <img src="images/Ativo 1.png" alt="img1" />
+      <img src="images/Ativo 2.png" alt="img2" />
+      <img src="images/Ativo 3.png" alt="img3" />
+      <img src="images/Ativo 4.png" alt="img4" />
+      <img src="images/Ativo 5.png" alt="img5" />
+      <img src="images/Ativo 6.png" alt="img6" />
+      <img src="images/Ativo 8.png" alt="img8" />
+    </footer>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

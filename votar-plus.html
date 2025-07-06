@@ -1,56 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Votar - Maker Pro Indie</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Votação da Feira Maker</h1>
+      <h2>Votação da Feira Maker</h2>
     </header>
 
     <main>
-        <section class="voting-section">
-            <h2>⚙️Votação - Categoria Maker Pro Indie⚙️</h2>
-            <div>
-                <p>Inventores independentes com investimento próprio, desenvolvendo projetos mais elaborados.</p>
-            </div>
-            
-            <p>Excelente! Agora é a vez da categoria <strong>Maker Pro Indie</strong>.</p>
-            <p>Insira o número do projeto e confirme.</p>
+      <section class="voter-identification">
+        <h2>⚙️Votação - Categoria Maker Pro Indie⚙️</h2>
+        <div>
+          <p>
+            Inventores independentes com investimento próprio, desenvolvendo
+            projetos mais elaborados.
+          </p>
+        </div>
 
-            <form id="voteFormvotacao2">
-                <div class="form-group">
-                    <input type="number" id="projectIdvotacao2" name="projectIdvotacao2" min="1" required
-                        placeholder="Número do Projeto">
-                </div>
-                <button type="button" id="confirmvotacao2">Confirmar Número</button>
-                <div id="confirmationStepvotacao2" class="hidden">
-                    <p>Você digitou o projeto número: <strong id="confirmedProjectvotacao2"></strong>.</p>
-                    <p>Deseja confirmar seu voto neste projeto?</p>
-                    <button type="submit">Sim, Confirmar Voto</button>
-                    <button type="button" id="editvotacao2">Editar Número</button>
-                </div>
-            </form>
-            <p id="voteMessagevotacao2" class="hidden"></p>
-        </section>
+        <p>
+          Excelente! Agora é a vez da categoria
+          <strong>Maker Pro Indie</strong>.
+        </p>
+        <p>Insira o número do projeto e confirme.</p>
+
+        <form id="voteFormvotacao2">
+          <div class="form-group">
+            <input
+              type="number"
+              id="projectIdvotacao2"
+              name="projectIdvotacao2"
+              min="1"
+              required
+              placeholder="Número do Projeto"
+            />
+          </div>
+          <button type="button" id="confirmvotacao2">Confirmar Número</button>
+          <div id="confirmationStepvotacao2" class="hidden">
+            <p>
+              Você digitou o projeto número:
+              <strong id="confirmedProjectvotacao2"></strong>.
+            </p>
+            <p>Deseja confirmar seu voto neste projeto?</p>
+            <button type="submit">Sim, Confirmar Voto</button>
+            <button type="button" id="editvotacao2">Editar Número</button>
+          </div>
+        </form>
+        <p id="voteMessagevotacao2" class="hidden"></p>
+      </section>
     </main>
 
-  <footer class="footer-logos">
-    <img src="images/Ativo 1.png" alt="img1" />
-    <img src="images/Ativo 2.png" alt="img2" />
-    <img src="images/Ativo 3.png" alt="img3" />
-    <img src="images/Ativo 4.png" alt="img4" />
-    <img src="images/Ativo 5.png" alt="img5" />
-    <img src="images/Ativo 6.png" alt="img6" />
-    <img src="images/Ativo 8.png" alt="img8" />
-  </footer>
+    <footer class="footer-logos">
+      <img src="images/Ativo 1.png" alt="img1" />
+      <img src="images/Ativo 2.png" alt="img2" />
+      <img src="images/Ativo 3.png" alt="img3" />
+      <img src="images/Ativo 4.png" alt="img4" />
+      <img src="images/Ativo 5.png" alt="img5" />
+      <img src="images/Ativo 6.png" alt="img6" />
+      <img src="images/Ativo 8.png" alt="img8" />
+    </footer>
     <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>
