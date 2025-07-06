@@ -87,7 +87,15 @@ header {
   background-color: rgba(0, 0, 0, 0);
   box-sizing: border-box;
 }
+
 main {
+  flex: 1;
+  padding: 30px 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+main.main-votacao {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -96,6 +104,7 @@ main {
   box-sizing: border-box;
   min-height: calc(100vh - 120px - 100px);
 }
+
 .voter-identification {
   text-align: center;
   margin-top: 30px;
@@ -202,72 +211,6 @@ footer.footer-logos img {
   height: 6vh;
   margin: 0 10px;
   vertical-align: middle;
-}
-
-.hidden {
-  display: none;
-}
-
-.thank-you-section {
-  text-align: center;
-  padding: 60px 20px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.thank-you-section h2 {
-  margin-bottom: 20px;
-}
-
-.thank-you-section p {
-  margin-bottom: 15px;
-  line-height: 1.6;
-}
-
-.voting-section {
-  text-align: center;
-  padding: 60px 20px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.voting-section h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-.voting-section p {
-  margin-bottom: 15px;
-  line-height: 1;
-  font-size: larger;
-}
-
-.voting-section .form-group {
-  margin: 20px 0;
-}
-
-.voting-section input[type="number"] {
-  padding: 10px;
-  font-size: 16px;
-  width: 250px;
-}
-
-.voting-section button {
-  background-color: #28a745;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  margin: 5px;
-}
-
-.voting-section {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
 }
 
 .hidden {
