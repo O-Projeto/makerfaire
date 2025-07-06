@@ -2,9 +2,14 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #fff;
     color: #333;
     line-height: 1.6;
+    margin-bottom: 80px;
+
+}
+main {
+    padding-bottom: 100px;
 }
 
 header {
@@ -139,9 +144,16 @@ main {
 }
 
 footer.footer-logos {
-    background-color: #222;
+   position: fixed; /* Fixa no rodapé da tela */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222; /* Cor de fundo (igual ao seu código atual) */
+    color: white;
     text-align: center;
-    padding: 5vh 2vw;
+    padding: 15px 0; /* Ajuste o padding conforme necessário */
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional */
 }
 
 footer.footer-logos img {
@@ -153,3 +165,124 @@ footer.footer-logos img {
 .hidden {
     display: none;
 }
+
+.thank-you-section {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.thank-you-section h2 {
+  margin-bottom: 20px;
+}
+
+.thank-you-section p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.voting-section {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.voting-section h2 {
+  margin-bottom: 20px;
+}
+
+.voting-section p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.voting-section .form-group {
+  margin: 20px 0;
+}
+
+.voting-section input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
+}
+
+.voting-section button {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+/* Estilo geral do formulário */
+.voting-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Caixa de texto (input) */
+input[type="number"] {
+    width: 100%;
+    max-width: 800px; /* Largura máxima */ 
+    height: 80px; 
+    font-size: 32px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+} 
+
+/* Botões */
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    height: 65px;
+    cursor: pointer;
+    font-size: 1.7rem;
+    transition: background-color 0.3s ease;
+    width: auto; 
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Mensagens e confirmação */
+.hidden {
+    display: none;
+}
+
+#confirmationStepvotacao1 {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+/* Estilo do Botão "Voltar ao Início" */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #45a049; /* Cor azul para combinar com o header */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #45a049; /* Cor mais escura no hover */
+}
+
