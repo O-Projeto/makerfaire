@@ -44,7 +44,7 @@ header {
 
 .presentation {
   position: relative;
-  background-image: url("images/9ffe904e-47e0-4bd7-bbe6-42ae4ba354fa.jpg");
+  background-image: url("/images/9ffe904e-47e0-4bd7-bbe6-42ae4ba354fa.jpg");
   background-size: cover;
   background-position: center;
   height: 40vh;
@@ -225,22 +225,22 @@ footer.footer-logos img {
 }
 
 .sidebar button.category-btn {
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-    background-color: #175df7;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  background-color: #175df7;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-  .sidebar button.category-btn:hover {
-    background-color: #0f46c1;
-  }
+.sidebar button.category-btn:hover {
+  background-color: #0f46c1;
+}
 
-  .sidebar button.category-btn.active {
-    background-color: #0a2e7a;
-  }
+.sidebar button.category-btn.active {
+  background-color: #0a2e7a;
+}
